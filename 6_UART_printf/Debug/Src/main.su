@@ -1,0 +1,5 @@
+../Src/main.c:39:6:delay_ms	24	static
+../Src/main.c:45:6:UART4_TX_init	8	static
+../Src/main.c:69:6:UART4_write	16	static
+../Src/main.c:78:5:__io_putchar	16	static
+../Src/main.c:84:5:main	8	static

@@ -1,0 +1,17 @@
+16:18:23 **** Incremental Build of configuration Debug for project 5_UART_TX ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L073RZTx -DSTM32L0 -c -I../Inc -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Device/ST/STM32L0xx/Include" -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "5_UART_TX.elf" @"objects.list"   -mcpu=cortex-m0plus -T"D:\Nucleo_Workspace\5_UART_TX\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_UART_TX.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_UART_TX.elf
+ 
+arm-none-eabi-size   5_UART_TX.elf 
+arm-none-eabi-objdump -h -S  5_UART_TX.elf  > "5_UART_TX.list"
+   text	   data	    bss	    dec	    hex	filename
+    820	      8	   1568	   2396	    95c	5_UART_TX.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_UART_TX.list
+ 
+
+16:18:24 Build Finished. 0 errors, 0 warnings. (took 439ms)
+

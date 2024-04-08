@@ -1,0 +1,3 @@
+../Src/uart.c:10:6:UART4_TX_init	8	static
+../Src/uart.c:34:6:UART4_write	16	static
+../Src/uart.c:43:5:__io_putchar	16	static

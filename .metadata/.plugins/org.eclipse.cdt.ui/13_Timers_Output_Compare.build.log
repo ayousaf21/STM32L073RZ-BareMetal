@@ -1,0 +1,18 @@
+17:09:35 **** Incremental Build of configuration Debug for project 13_Timers_Output_Compare ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L073RZTx -DSTM32L0 -c -I../Inc -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Device/ST/STM32L0xx/Include" -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L073RZTx -DSTM32L0 -c -I../Inc -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Device/ST/STM32L0xx/Include" -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "13_Timers_Output_Compare.elf" @"objects.list"   -mcpu=cortex-m0plus -T"D:\Nucleo_Workspace\13_Timers_Output_Compare\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_Timers_Output_Compare.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_Timers_Output_Compare.elf
+ 
+arm-none-eabi-size   13_Timers_Output_Compare.elf 
+arm-none-eabi-objdump -h -S  13_Timers_Output_Compare.elf  > "13_Timers_Output_Compare.list"
+   text	   data	    bss	    dec	    hex	filename
+   6408	    108	   1588	   8104	   1fa8	13_Timers_Output_Compare.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_Timers_Output_Compare.list
+ 
+
+17:09:36 Build Finished. 0 errors, 0 warnings. (took 566ms)
+

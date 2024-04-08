@@ -1,0 +1,19 @@
+/*
+ * timer.c
+ *
+ *  Created on: Mar 19, 2024
+ *      Author: Muhammad Ali
+ */
+
+
+#include "timer.h"
+
+
+void TIM2_1HZ_init(void)
+{
+
+	RCC->APB1ENR |= APB1_TIM2_EN;
+
+
+
+}

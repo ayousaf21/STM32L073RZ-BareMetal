@@ -1,0 +1,17 @@
+16:30:21 **** Incremental Build of configuration Debug for project 12_Timers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L073RZTx -DSTM32L0 -c -I../Inc -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Device/ST/STM32L0xx/Include" -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "12_Timers.elf" @"objects.list"   -mcpu=cortex-m0plus -T"D:\Nucleo_Workspace\12_Timers\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_Timers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12_Timers.elf
+ 
+arm-none-eabi-size   12_Timers.elf 
+arm-none-eabi-objdump -h -S  12_Timers.elf  > "12_Timers.list"
+   text	   data	    bss	    dec	    hex	filename
+   6108	    108	   1588	   7804	   1e7c	12_Timers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 12_Timers.list
+ 
+
+16:30:22 Build Finished. 0 errors, 0 warnings. (took 488ms)
+

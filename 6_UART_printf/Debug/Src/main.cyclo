@@ -1,0 +1,5 @@
+main.c:39:6:delay_ms	2
+main.c:45:6:UART4_TX_init	1
+main.c:69:6:UART4_write	2
+main.c:78:5:__io_putchar	1
+main.c:84:5:main	2

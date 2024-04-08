@@ -1,0 +1,17 @@
+03:55:50 **** Incremental Build of configuration Debug for project 14_Timers_Input_Capture ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32L073RZTx -DSTM32L0 -c -I../Inc -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Device/ST/STM32L0xx/Include" -I"D:/Nucleo_Workspace/STM32L0_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "14_Timers_Input_Capture.elf" @"objects.list"   -mcpu=cortex-m0plus -T"D:\Nucleo_Workspace\14_Timers_Input_Capture\STM32L073RZTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_Timers_Input_Capture.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_Timers_Input_Capture.elf
+ 
+arm-none-eabi-size   14_Timers_Input_Capture.elf 
+arm-none-eabi-objdump -h -S  14_Timers_Input_Capture.elf  > "14_Timers_Input_Capture.list"
+   text	   data	    bss	    dec	    hex	filename
+   6472	    108	   1588	   8168	   1fe8	14_Timers_Input_Capture.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_Timers_Input_Capture.list
+ 
+
+03:55:50 Build Finished. 0 errors, 0 warnings. (took 503ms)
+

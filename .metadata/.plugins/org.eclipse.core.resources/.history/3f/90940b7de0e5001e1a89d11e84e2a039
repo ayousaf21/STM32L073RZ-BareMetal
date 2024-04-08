@@ -1,0 +1,9 @@
+/*
+ * timer.c
+ *
+ *  Created on: Mar 19, 2024
+ *      Author: Muhammad Ali
+ */
+
+
+#include "timer.h"
